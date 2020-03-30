@@ -13,6 +13,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatTabsModule } from "@angular/material/tabs";
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -28,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     MatGridListModule,
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
