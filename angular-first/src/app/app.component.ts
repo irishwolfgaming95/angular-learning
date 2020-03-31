@@ -1,10 +1,8 @@
 import { Component } from "@angular/core";
 
 export interface Tile {
-  color: string;
   cols: number;
   rows: number;
-  text: string;
 }
 
 @Component({
@@ -14,4 +12,6 @@ export interface Tile {
 })
 export class AppComponent {
   title = "angular-first";
+
+  tiles: Tile[] = [{ cols: 4, rows: 1 }];
 }

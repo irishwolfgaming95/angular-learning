@@ -1,8 +1,10 @@
 <app-header></app-header>
-<mat-grid-list cols="2" rowHeight="100px">
-  <mat-grid-tile>
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+    *ngFor="let tile of tiles"
+    [rowspan]="tile.rows"
+    [colspan]="tile.cols"
+  >
     <h1>hello world</h1>
-    <br />
-    <p>this is a test page to help me learn the framework.</p>
   </mat-grid-tile>
 </mat-grid-list>
